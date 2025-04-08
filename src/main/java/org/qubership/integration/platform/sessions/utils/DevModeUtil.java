@@ -24,7 +24,7 @@ public class DevModeUtil {
     @Value("${spring.profiles.active}")
     private String activeProfile;
 
-    public boolean isDevMode() {
+    public boolean isDevMode(){
         return "development".equals(activeProfile);
     }
 }
