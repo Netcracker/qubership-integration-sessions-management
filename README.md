@@ -42,7 +42,8 @@ Application has 'development' Spring profile to run service locally with minimum
 
 ## Dependencies
 
-This service relies on [Design-Time Catalog Service](https://github.com/Netcracker/qubership-integration-designtime-catalog), which is used to provide integration chain names. 
+This service relies on [Design-Time Catalog Service](https://github.com/Netcracker/qubership-integration-designtime-catalog), which is used to provide integration chain names.
+It also requires Consul and OpenSearch services.
 
 ## Contribution
 
