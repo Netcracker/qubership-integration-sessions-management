@@ -27,7 +27,7 @@ Application parameters can be set by environment variables.
 | TRACING_ENABLED                         | false                | If true, enables application tracing via OpenTelemetry protocol.                                                             |
 | TRACING_HOST                            |                      | Tracing endpoint URL.                                                                                                        |
 | TRACING_SAMPLER_PROBABILISTIC           | 0.01                 | Tracing sampling probability. By default, application samples only 1% of requests to prevent overwhelming the trace backend. |
-| OPENSEARCH_HOST                         | opensearch           | OpenSearch host name                                                                                                         |
+| OPENSEARCH_HOST                         | opensearch           | OpenSearch hostname                                                                                                          |
 | OPENSEARCH_PORT                         | 9200                 | OpenSearch port                                                                                                              |
 | OPENSEARCH_PROTOCOL                     | http                 | OpenSearch service protocol                                                                                                  |
 | OPENSEARCH_USERNAME                     |                      | OpenSearch username                                                                                                          |
