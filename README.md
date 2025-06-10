@@ -14,26 +14,26 @@ It can be run locally using a [docker compose configuration](https://github.com/
 
 Application parameters can be set by environment variables.
 
-| Environment variable                    | Default value      | Description                                                                                                                  |
-|-----------------------------------------|--------------------|------------------------------------------------------------------------------------------------------------------------------|
-| ROOT_LOG_LEVEL                          | INFO               | Logging level                                                                                                                |
-| CONSUL_URL                              | http://consul:8500 | Consul URL                                                                                                                   |
-| CONSUL_ADMIN_TOKEN                      |                    | Consul assess token                                                                                                          |
-| MAX_UPLOAD_MULTIPART_FILE_SIZE          | 25                 | Maximum file size to upload, MB. Limits data size for upload operations like sessions import.                                |
-| MICROSERVICE_NAME                       |                    | Microservice name.                                                                                                           |
-| DEPLOYMENT_VERSION                      | v1                 | Deployment version for bluegreen.                                                                                            |
-| NAMESPACE                               |                    | Kubernetes namespace.                                                                                                        |
-| ORIGIN_NAMESPACE                        |                    | Origin namespace for bluegreen.                                                                                              |
-| TRACING_ENABLED                         | false              | If true, enables application tracing via OpenTelemetry protocol.                                                             |
-| TRACING_HOST                            |                    | Tracing endpoint URL.                                                                                                        |
-| TRACING_SAMPLER_PROBABILISTIC           | 0.01               | Tracing sampling probability. By default, application samples only 1% of requests to prevent overwhelming the trace backend. |
-| OPENSEARCH_HOST                         | opensearch         | OpenSearch host name                                                                                                         |
-| OPENSEARCH_PORT                         | 9200               | OpenSearch port                                                                                                              |
-| OPENSEARCH_PROTOCOL                     | http               | OpenSearch service protocol                                                                                                  |
-| OPENSEARCH_USERNAME                     |                    | OpenSearch username                                                                                                          |
-| OPENSEARCH_PASSWORD                     |                    | OpenSearch password                                                                                                          |
-| OPENSEARCH_PREFIX                       |                    | A prefix string that is if not empty added followed by underscore to the OpenSearch index name.                              | 
-| OPENSEARCH_SESSION_DEFAULT_BUFFER_LIMIT | 104857600          | Buffer limit for the OpenSearch response concumer, bytes.                                                                    |
+| Environment variable                    | Default value        | Description                                                                                                                  |
+|-----------------------------------------|----------------------|------------------------------------------------------------------------------------------------------------------------------|
+| ROOT_LOG_LEVEL                          | INFO                 | Logging level                                                                                                                |
+| CONSUL_URL                              | `http://consul:8500` | Consul URL                                                                                                                   |
+| CONSUL_ADMIN_TOKEN                      |                      | Consul assess token                                                                                                          |
+| MAX_UPLOAD_MULTIPART_FILE_SIZE          | 25                   | Maximum file size to upload, MB. Limits data size for upload operations like sessions import.                                |
+| MICROSERVICE_NAME                       |                      | Microservice name.                                                                                                           |
+| DEPLOYMENT_VERSION                      | v1                   | Deployment version for bluegreen.                                                                                            |
+| NAMESPACE                               |                      | Kubernetes namespace.                                                                                                        |
+| ORIGIN_NAMESPACE                        |                      | Origin namespace for bluegreen.                                                                                              |
+| TRACING_ENABLED                         | false                | If true, enables application tracing via OpenTelemetry protocol.                                                             |
+| TRACING_HOST                            |                      | Tracing endpoint URL.                                                                                                        |
+| TRACING_SAMPLER_PROBABILISTIC           | 0.01                 | Tracing sampling probability. By default, application samples only 1% of requests to prevent overwhelming the trace backend. |
+| OPENSEARCH_HOST                         | opensearch           | OpenSearch host name                                                                                                         |
+| OPENSEARCH_PORT                         | 9200                 | OpenSearch port                                                                                                              |
+| OPENSEARCH_PROTOCOL                     | http                 | OpenSearch service protocol                                                                                                  |
+| OPENSEARCH_USERNAME                     |                      | OpenSearch username                                                                                                          |
+| OPENSEARCH_PASSWORD                     |                      | OpenSearch password                                                                                                          |
+| OPENSEARCH_PREFIX                       |                      | A prefix string that is if not empty added followed by underscore to the OpenSearch index name.                              | 
+| OPENSEARCH_SESSION_DEFAULT_BUFFER_LIMIT | 104857600            | Buffer limit for the OpenSearch response concumer, bytes.                                                                    |
 
 Configuration can be overridden with values stored in Consul.
 The ```config/${NAMESPACE}``` prefix is used.
