@@ -1,4 +1,4 @@
-# Qubership Integration Platform — Sessions Management Service
+# Qubership Integration Platform — Sessions Management
 
 Sessions Management Service is a part of Qubership Integration Platform.
 It provides an API to manage recorded sessions of integration flows' execution stored in OpenSearch index.
