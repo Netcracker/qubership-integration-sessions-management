@@ -22,4 +22,4 @@ datasource:
 
 qip:
   internal-services:
-    runtime-catalog: qip-run-time-catalog
+    runtime-catalog: qip-runtime-catalog
